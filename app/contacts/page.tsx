@@ -24,13 +24,13 @@ export default  function Page(){
         <div className="form container mx-auto">
             <h3 className="m-4 font-bold text-center">Send us an Enquery and we will respond to you as soon as possible</h3>
             <form onSubmit={handleSubmit} action="post">
-                <label  className="mt-4 block">Full Name</label>
-                <TextInput onChange={(e)=>setName(e.target.value)}  required placeholder="John Mwangi"/>
+                <label  className="mt-4  block">Full Name</label>
+                <input className="px-4 py-2 w-full border rounded-md" onChange={(e)=>setName(e.target.value)}  required placeholder="John Mwangi"/>
                 <label  className="mt-4 block">Email</label>
-                <TextInput onChange={(e)=>setEmail(e.target.value)} placeholder="mwangi97@gmail.com" required type="email"/>
+                <input className="px-4 py-2 w-full border rounded-md" onChange={(e)=>setEmail(e.target.value)} placeholder="mwangi97@gmail.com" required type="email"/>
                 <label  className="mt-4 block">Enquary</label>
                 <Textarea onChange={(e)=>setEnquary(e.target.value)} placeholder="start typing ..." required/>
-                <Button className="mt-4" type="submit">Submit</Button>
+                <button className="mt-4 text-black px-4 py-2 bg-grey rounded-sm" type="submit">Submit</button>
             </form>
         </div>
         </>

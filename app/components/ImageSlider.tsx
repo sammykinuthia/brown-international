@@ -12,23 +12,31 @@ export default function ImageSlider(){
     const fadeImages = [
         {
           url:"https://res.cloudinary.com/dbeq8dpkz/image/upload/v1689854813/Brown%20master/driving-min_vonf8p.webp",
-          caption: 'Driving'
+          caption: 'Driving',
+          path:"/programs/driving"
         },
         {
             url:"https://res.cloudinary.com/dbeq8dpkz/image/upload/v1689854814/Brown%20master/student-min_swqles.webp",
-            caption: 'We offer the best to our students. Come and be part of us.'
+            caption: 'We offer the best to our students. Come and be part of us.',
+            path:"/programs/scholarship"
           },
         {
           url: "https://res.cloudinary.com/dbeq8dpkz/image/upload/v1689854813/Brown%20master/catering-min_shu40k.webp",
-          caption: 'Home Care Management'
+          caption: 'Home Care Management',
+          path:"/programs/homecare"
+
         },
         {
           url: "https://res.cloudinary.com/dbeq8dpkz/image/upload/v1689854813/Brown%20master/counseling-min_glcym0.webp",
-          caption: 'Guidance & Counseling'
+          caption: 'Guidance & Counseling',
+          path:"/programs/counseling"
+
         },
         {
             url: "https://res.cloudinary.com/dbeq8dpkz/image/upload/v1689854812/Brown%20master/homecare-min_fwolw4.webp",
-            caption: 'Guidance & Counseling'
+            caption: 'Guidance & Counseling',
+          path:"/programs/counseling"
+
           },
       ];
 
@@ -39,7 +47,7 @@ export default function ImageSlider(){
           <div className='img-slider' key={index}>
             <Image width={1000} height={700} alt='slider image' className='slide-img aspect-video' src={fadeImage.url} />
             <h2 className='img-caption'>{fadeImage.caption}</h2>
-            <a className='program-link py-2 px-4 rounded-md bg-blue-500 text-white' href={''}>Learn More</a>
+            <a className='program-link py-2 px-4 rounded-md bg-blue-500 text-white' href={fadeImage.path}>Learn More</a>
           </div>
         ))}
       </Fade>

@@ -11,10 +11,10 @@
 }
 
 .home-hero {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url(/brown.jpg), lightgray -27.174px -205px / 102.733% 192.045% no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.70) 100%), url('https://res.cloudinary.com/dbeq8dpkz/image/upload/v1689854812/Brown%20master/brown-min_hwxccv.webp'), lightgray -27.174px -205px / 102.733% 192.045% no-repeat;
 }
 
-.nav {
+.bg-grey {
   background: lightgrey;
 
 }

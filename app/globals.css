@@ -1,27 +1,62 @@
+@import "react-slideshow-image/dist/styles.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.hero {
+  height: 7rem;
+  width: 100%;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.home-hero {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.70) 100%), url(/brown.jpg), lightgray -27.174px -205px / 102.733% 192.045% no-repeat;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.nav {
+  background: lightgrey;
+
+}
+
+.img-slider {
+  position: relative;
+}
+
+.slide-img {
+  width: 100%;
+  max-height: 80vh;
+  object-fit: cover;
+  object-position: top;
+}
+
+.img-caption {
+  position: absolute;
+  font-size: 1.4rem;
+  bottom: 4.3rem;
+
+  right: 50%;
+  transform: translate(50%,0);
+  width: 100%;
+  text-align: center;
+  background-color: hsla(0, 0%, 10%, 0.364);
+  padding: .7rem 1rem ;
+  font-weight: 700;
+  color: white;
+}
+.program-link{
+  position: absolute;
+  bottom: .7rem;
+  right: 50%;
+  transform: translate(50%,0);
+}
+.title{
+  @apply font-bold text-center text-lg my-2 ;
+}
+
+.program-img{
+  max-height: 70vh;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
 }

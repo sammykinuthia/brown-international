@@ -5,9 +5,9 @@ import Image from "next/image";
 
 
 export default function MyFooter() {
-  const hoverLink = "text-gray-500 hover:text-blue-500 text-lg";
+  const hoverLink = "text-gray-400 hover:text-blue-500 text-sm";
   return (
-    <Footer className="container mx-auto border-none mt-8 border-t-2 border-gray-300">
+    <Footer className="container mx-auto border-none mt-16 border-t-2 border-gray-300 text-sm">
       <div className="w-full px-4 grid gap-4 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
         <div className="flex justify-center items-center flex-col md:flex-row">
           <Image width={180} height={180} className="h-40 " src={logo} alt="logo" />
@@ -22,10 +22,10 @@ export default function MyFooter() {
             <Footer.Link className={`${hoverLink} `} href="about">
               About Us
             </Footer.Link>
-            <Footer.Link className={`${hoverLink} `} href="programs">
+            <Footer.Link className={`${hoverLink}  `} href="programs">
               Our Programs
             </Footer.Link>
-            <a className={`${hoverLink} `} href="mailto:info@masterbrown.co.ke">info@masterbrown.co.ke</a>
+            <a className={`${hoverLink}  `} href="mailto:info@masterbrown.co.ke">info@masterbrown.co.ke</a>
             <a className={`${hoverLink} `} href="mailto:Masterbrown1980@gmail.com">Masterbrown1980@gmail.com</a>
           </Footer.LinkGroup>
         </div>
